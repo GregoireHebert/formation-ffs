@@ -16,9 +16,16 @@ services:
     App\:
         resource: '../src/'
         exclude:
-            - '../src/DependencyInjection/'
-            - '../src/Entity/'
+            - '../src/Blog/DependencyInjection/'
+            - '../src/HelloWorld/DependencyInjection/'
+            - '../src/Blog/Entity/'
+            - '../src/HelloWorld/Entity/'
+            - '../src/Customers/Entity/'
             - '../src/Kernel.php'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Blog\Controller\:
+        resource: '../src/Blog/Controller/'
+        tags: ['controller.service_arguments']

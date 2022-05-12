@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ blogPost.title }}</h1>
+    <p>
+        {{ blogPost.content }}
+    </p>
+    {{ blogPost.author }} - publié le {{ blogPost.publicationDate|date('d/m/Y H:i:s') }}
+{% endblock %}

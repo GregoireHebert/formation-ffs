@@ -1,7 +1,15 @@
-controllers:
-    resource: ../../src/Controller/
+HelloWorld:
+    resource: ../../src/HelloWorld/Controller/
     type: annotation
 
-kernel:
-    resource: ../../src/Kernel.php
+Blog:
+    resource: ../../src/Blog/Controller/
+    type: annotation
+
+Customers:
+    resource: ../../src/Customers/Controller/
+    type: annotation
+
+Security:
+    resource: ../../src/Security/Controller/
     type: annotation
